@@ -87,6 +87,8 @@ if err:
     return wrap_error("operation failed", err)
 ```
 
+**边界例外**：在系统的最外层（顶层处理器 / API 边界），记录日志并返回统一错误**正是**正确的单一处理方式——"只处理一次"指每一层只做一次，而不是整个调用链只做一次。与原则 1 的"log + return fallback"一致。
+
 ---
 
 ## 反模式

@@ -97,7 +97,7 @@ Quick reference checklist for code reviews.
 
 ## Time Budget
 
-This checklist is designed for a **lightweight quick review**. For comprehensive reviews covering architecture and performance analysis, use the full four-phase process in [SKILL.md](../SKILL.md) (19–36 minutes). Smaller PRs trend toward the lower end of each phase; larger PRs toward the upper end.
+This checklist is designed for a **lightweight quick review**. For comprehensive reviews covering architecture and performance analysis, use the full six-phase process in [SKILL.md](../SKILL.md).
 
 | PR Size | Quick Review | Full Review (4-phase) |
 |---------|-------------|----------------------|

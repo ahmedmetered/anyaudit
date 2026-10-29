@@ -72,3 +72,26 @@ an unrelated refactor into a fix.
 - The lens library guides attention; it does not replace reading the code.
 - Style preferences are nits, not findings, unless the project's own
   conventions say otherwise.
+
+### Severity vocabulary (single scale)
+
+Reports use one scale: **critical / major / minor / nit**. Lenses that ship
+with other vocabularies map onto it before reporting:
+
+| Lens vocabulary | Maps to |
+| --- | --- |
+| security guide: High | major |
+| security guide: Medium | minor |
+| security guide: Low | nit |
+| checklist: [blocking] | major (critical if it breaks the build or loses data) |
+| checklist: [important] | minor |
+| checklist: [nit] / [suggestion] / [learning] / [praise] | nit or drop |
+
+Findings never carry the lens's original severity into a report.
+
+### Language note
+
+Some reference lenses (notably the cross-cutting guides in
+`references/cross-cutting/`) are written in Chinese. The guidance is
+authoritative regardless of language; findings extracted from them are
+reported in the review's language.
